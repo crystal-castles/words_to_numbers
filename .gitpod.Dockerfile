@@ -8,7 +8,13 @@ RUN chsh -s /bin/zsh
 WORKDIR /root/
 
 RUN wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh
+
+WORKDIR /
+
 RUN chmod +x /root/install.sh
 RUN /root/install.sh
-RUN cp -r .oh-my-zsh /etc/skel/
-RUN cp .zshrc /etc/skel/
+RUN cp -r /root/.oh-my-zsh /etc/skel/
+RUN cp /root/.zshrc /etc/skel/
+
+RUN rm -rf /root/.oh-my-zsh /root/.zshrc
+
