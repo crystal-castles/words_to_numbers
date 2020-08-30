@@ -4,8 +4,8 @@ RUN apt-get update
 RUN apt-get install -y zsh
 RUN chsh -s $(which zsh)
 
-RUN git clone git@github.com:jasonm23/.zsh.d.git ~/.zsh.d
+RUN git clone git@github.com:jasonm23/.zsh.d.git /root/.zsh.d
 
-RUN ~/.zsh.d/install
+RUN /root/.zsh.d/install
 
 
