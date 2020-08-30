@@ -1,0 +1,3 @@
+tasks:
+  - init: crystal spec
+    command: crystal spec -v
