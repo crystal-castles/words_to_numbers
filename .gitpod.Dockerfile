@@ -1,5 +1,6 @@
 FROM crystallang/crystal
 
+RUN apt-get update
 RUN apt-get install -y wget curl
 
 RUN echo "alias gss=\"git status -s\"" >> $HOME/.bashrc
