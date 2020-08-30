@@ -2,5 +2,4 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: crystal build src/words_to_numbers.cr
-    command: crystal spec -v
+  - command: crystal spec -v
