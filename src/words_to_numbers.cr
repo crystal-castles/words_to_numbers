@@ -16,7 +16,7 @@ class String
          "quintillion", "sextillion", "septillion", "octillion", "nonillion", "decillion"}
 
   def words_to_numbers : BigInt
-    words = self.downcase.gsub(/[,-]/," ").split
+    words = self.downcase.gsub(/[,-]/, " ").split
 
     negative_multiplyer : BigInt = 1.to_big_i
 
