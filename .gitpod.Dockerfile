@@ -6,6 +6,8 @@ FROM gitpod/workspace-full
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
+FROM crystallang/crystal
+
 RUN apt-get update && \
     apt-get install -y build-essential curl libevent-dev libssl-dev libxml2-dev libyaml-dev libgmp-dev git && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
