@@ -2,6 +2,8 @@ FROM crystallang/crystal
 
 RUN apt-get update
 RUN apt-get install -y zsh
-RUN chsh -s $(which zsh)
+RUN chsh -s /bin/zsh
 
-RUN git clone https://github.com/jasonm23/.zsh.d.git 
+RUN sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+RUN cp -r .oh-my-zsh /etc/skel/
+RUN cp .zshrc /etc/skel/
