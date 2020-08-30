@@ -1,3 +1,3 @@
 alias gss="git status -s"
-alias gpushm="git push origin master"
+alias gpm="git push origin master"
 alias gup="git pull --rebase"
