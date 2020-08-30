@@ -22,4 +22,4 @@ ENV CRYSTAL_CONFIG_PATH lib:/opt/crystal-head/src:/opt/crystal-head/libs
 ENV LIBRARY_PATH /opt/crystal/embedded/lib
 ENV PATH /opt/crystal-head/bin:/opt/llvm-3.5.0-1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-RUN make clean crystal release=1
+RUN make crystal release=1
